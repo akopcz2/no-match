@@ -5,7 +5,12 @@ var imagesFolder = './build/static/images/';
 var imageDirectory = '/build/static/images/';
 //Get prefix from deployment file
 var deploymentFile = JSON.parse(fs.readFileSync('./deployment.json', 'utf8'));
-var prefix = JSON.stringify(deploymentFile.prefix).replace(/\"/g, "").toLowerCase();
+if(deploymentFile.prefix){
+    var prefix = JSON.stringify(deploymentFile.prefix).replace(/\"/g, "").toLowerCase();
+}
+else{
+    console.log('You are missing a image prefix in your deployment.json');
+}
 
 var deleteTheseImages = [];
 
