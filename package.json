@@ -1,6 +1,6 @@
 {
   "name": "no-match",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Npm module to delete all images that do not match the prefix inside the deplayment.json file",
   "main": "index.js",
   "scripts": {

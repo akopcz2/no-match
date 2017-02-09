@@ -3,7 +3,7 @@
 var fs = require('fs');
 var appRoot = require('app-root-path');
 var imagesFolder = appRoot + '/build/static/images/';
-var imageDirectory = appRoot + '/build/static/images/';
+var imageDirectory = '/build/static/images/';
 //Get prefix from deployment file
 var deploymentFile = JSON.parse(fs.readFileSync('./deployment.json', 'utf8'));
 if(deploymentFile.prefix){
@@ -24,7 +24,7 @@ function getImages(callback){
         fs.readdir(imagesFolder, (err, files) => {
             files.forEach(file => {
                 if(file.indexOf(prefix) == -1){
-                var fullPath = fileLocation + imageDirectory + file;
+                var fullPath = fileLocation + imageDirectory  + file;
                 deleteTheseImages.push(fullPath);
                 }
             });
