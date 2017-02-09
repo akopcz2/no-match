@@ -1,8 +1,9 @@
 //Read through all images in image folder
 //Delete ones that do not have the right prefix
 var fs = require('fs');
-var imagesFolder = './build/static/images/';
-var imageDirectory = '/build/static/images/';
+var appRoot = require('app-root-path');
+var imagesFolder = appRoot + '/build/static/images/';
+var imageDirectory = appRoot + '/build/static/images/';
 //Get prefix from deployment file
 var deploymentFile = JSON.parse(fs.readFileSync('./deployment.json', 'utf8'));
 if(deploymentFile.prefix){
