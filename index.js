@@ -25,6 +25,7 @@ function getImages(callback){
             files.forEach(file => {
                 if(file.indexOf(prefix) == -1){
                 var fullPath = fileLocation + imageDirectory  + file;
+                fullPath = fullPath.split('node_modules/no-match/').join('');
                 deleteTheseImages.push(fullPath);
                 }
             });
