@@ -1,0 +1,25 @@
+{
+  "name": "no-match",
+  "version": "1.0.0",
+  "description": "Npm module to delete all images that do not match the prefix inside the deplayment.json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akopcz2/no-match.git"
+  },
+  "keywords": [
+    "node",
+    "filestsystem",
+    "build",
+    "tools"
+  ],
+  "author": "Adrian Kopczewski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akopcz2/no-match/issues"
+  },
+  "homepage": "https://github.com/akopcz2/no-match#readme"
+}
