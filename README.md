@@ -20,7 +20,7 @@ var prefix;
 
 ## Change Log
 
-### 1.0.4
+### 1.0.5
   - Initial release
   - Added App root module te reference the root of the project
 
