@@ -3,7 +3,7 @@
 ## Installation
 
 ``` bash
-$ npm install node-match
+$ npm install no-match
 ```
 
 ## Usage
