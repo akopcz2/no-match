@@ -1,6 +1,6 @@
 {
   "name": "no-match",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Npm module to delete all images that do not match the prefix inside the deplayment.json file",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "url": "https://github.com/akopcz2/no-match/issues"
   },
   "homepage": "https://github.com/akopcz2/no-match#readme",
-  "devDependencies": {
+  "dependencies": {
     "app-root-path": "^2.0.1"
   }
 }
