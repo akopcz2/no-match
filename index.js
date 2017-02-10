@@ -4,7 +4,7 @@ var fs = require('fs');
 var appRoot = require('app-root-path');
 var imagesFolder = appRoot + '/build/static/images/';
 var imageDirectory = '/build/static/images/';
-var prefix = 'Your custom prefix'
+var prefix = 'Your custom prefix';
 
 module.exports = {
     init:function(){
